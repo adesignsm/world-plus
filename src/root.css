@@ -1,5 +1,13 @@
+:root {
+    --command-prompt-font: "consolas";
+}
+
+@font-face {
+    font-family: "consolas";
+    src: url(./Assets/Fonts/CONSOLA.TTF);
+}
+
 body, html {
-    background-color: #FF6233;
     margin: 0;
     padding: 0;
     height: 100%;

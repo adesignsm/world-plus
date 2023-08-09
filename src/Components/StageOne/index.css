@@ -1,0 +1,76 @@
+#stage-one-container {
+    display: none;
+}
+
+#stage-one-cmd-container {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    z-index: 9;
+}
+
+#stage-one-cmd-container .task-bar {
+    border-bottom: 1px solid #fff;
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+}
+
+#stage-one-cmd-container .task-bar p {
+    font-size: medium;
+}
+
+#stage-one-cmd-container .prompt-container {
+    padding-left: 1rem;
+}
+
+#stage-one-cmd-container .prompt-container input[type=text] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+#stage-one-cmd-container .prompt-container input[type=text]:focus {
+    outline: none;
+}
+
+#stage-one-cmd-container .prompt-container button {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: var(--command-prompt-font);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#stage-one-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 8;
+}
+
+.attention {
+    animation: fadeInOut 1s infinite;
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Fade out at the start and end of the animation */
+    }
+    50% {
+        opacity: 1; /* Fade in halfway through the animation */
+    }
+}
