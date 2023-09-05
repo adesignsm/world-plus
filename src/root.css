@@ -12,4 +12,21 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100vw;
+    user-select: none;
+}
+
+#page .menu-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5 );
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: var(--command-prompt-font);
+    font-weight: 100;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
 }

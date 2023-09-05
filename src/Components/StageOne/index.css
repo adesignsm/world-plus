@@ -4,7 +4,6 @@
 
 #stage-one-cmd-container {
     position: fixed;
-    top: 0vh;
     left: 0vw;
     height: 100vh;
     width: 30vw;
@@ -28,6 +27,10 @@
     padding-left: 1rem;
 }
 
+#stage-one-cmd-container .prompt-container ul {
+    list-style: none;
+}
+
 #stage-one-cmd-container .prompt-container input[type=text] {
     background-color: transparent;
     border: none;
@@ -41,15 +44,20 @@
     outline: none;
 }
 
-#stage-one-cmd-container .prompt-container button {
+#stage-one-cmd-container .prompt-container #enter-stage-two-button, button {
     background-color: transparent;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 1rem;
     text-transform: uppercase;
     font-family: var(--command-prompt-font);
-    font-size: x-large;
+    font-size: medium;
+    width: 20vw;
     cursor: pointer;
+}
+
+#stage-one-cmd-container .prompt-container #user-input-area button {
+    width: 10vw;
 }
 
 #stage-one-canvas {
@@ -61,9 +69,59 @@
     z-index: 8;
 }
 
+#file-explorer {
+    position: fixed;
+    top: 0vh;
+    left: 30vw;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    z-index: 9;
+    display: none;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+#file-explorer .task-bar {
+    border-bottom: 1px solid #fff;
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+}
+
+#file-explorer .task-bar p {
+    font-size: medium;
+}
+
+#file-explorer .prompt-container {
+    padding-left: 1rem;
+}
+
+#file-explorer img {
+    width: 100%;
+}
+
 .attention {
     animation: fadeInOut 1s infinite;
     opacity: 0;
+}
+
+.info-box {
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    width: 10vw;
+    font-size: large;
+    font-family: var(--command-prompt-font);
+    padding: 1rem;
+}
+
+.info-box ul {
+    padding-left: 1vw;
 }
 
 @keyframes fadeInOut {
@@ -72,5 +130,43 @@
     }
     50% {
         opacity: 1; /* Fade in halfway through the animation */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #stage-one-cmd-container {
+        bottom: 0vh;
+        width: 100vw;
+        height: 40vh;
+        overflow-y: scroll;
+    }
+
+    #stage-one-cmd-container .prompt-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vh;
+    }
+
+    #stage-one-cmd-container .prompt-container #user-input-area button {
+        width: 30vw;
+    }
+
+    #file-explorer {
+        height: 55vh !important;
+        width: 100vw !important;
+        left: 0 !important;
+    }
+
+    #file-explorer img, #file-explorer video {
+        width: 90%;
+    }
+
+    #stage-one-cmd-container .prompt-container #enter-stage-two-button button {
+        width: 65vw;
+    }
+
+    .info-box {
+        width: 50vw;
+        padding: 5vw;
     }
 }

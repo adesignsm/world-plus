@@ -1,0 +1,36 @@
+#stage-two-transition-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: none;
+    text-align: center;
+}
+
+#stage-two-transition-container img {
+    max-width: 60%;
+    animation: rotateAnimation infinite 10s linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #stage-two-transition-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #stage-two-transition-container img {
+    max-width: 90%;
+  }
+}

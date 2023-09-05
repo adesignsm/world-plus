@@ -103,6 +103,22 @@
   background-color: #80FF44 !important;
 }
 
+.stage-two-transition {
+  background-color: #004DFF !important;
+}
+
+.stage-two {
+  background-color: #004DFF !important;
+}
+
+.stage-three-transition {
+  background-color: #FF6233 !important;
+}
+
+.stage-three {
+  background-color: #FF6233 !important;
+}
+
 /* Add more shape-blob definitions with different background colors, sizes, and delays */
 
 @keyframes transform {
