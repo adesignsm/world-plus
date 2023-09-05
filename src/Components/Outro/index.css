@@ -1,0 +1,65 @@
+#outro-container img {
+    width: 80vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+#outro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8); /* Initial scale */
+    opacity: 0;
+    transition: opacity 5s ease-in-out, transform 5s ease-in-out; /* Transition property */
+}
+
+#outro-container.loaded {
+    transform: scale(1); /* Applied when image is loaded */
+    opacity: 1;
+}
+
+#outro-container img {
+    width: 80vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+#outro-cmd-container {
+    position: relative;
+    top: 20vh;
+    margin: 0 auto;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+#outro-cmd-container .task-bar {
+    border-bottom: 1px solid #fff;
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+}
+
+#outro-cmd-container .task-bar p {
+    font-size: medium;
+}
+
+#outro-cmd-container .prompt-container {
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #outro-cmd-container {
+        overflow-y: scroll;
+        width: 90vw;
+        height: 65vh;
+    }
+} 

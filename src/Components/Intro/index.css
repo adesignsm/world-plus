@@ -39,6 +39,7 @@
     color: #fff;
     font-family: var(--command-prompt-font);
     border-radius: 5px;
+    overflow-y: scroll;
 }
 
 #intro-cmd-container .task-bar {
@@ -53,4 +54,12 @@
 
 #intro-cmd-container .prompt-container {
     padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #intro-cmd-container {
+        overflow-y: scroll;
+        width: 90vw;
+        height: 65vh;
+    }
 }

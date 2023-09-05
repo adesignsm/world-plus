@@ -1,0 +1,201 @@
+#stage-three-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#stage-three-cmd-container {
+    position: fixed;
+    left: 0vw;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    z-index: 9;;
+}
+
+#stage-three-cmd-container .task-bar {
+    border-bottom: 1px solid #fff;
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+}
+
+#stage-three-cmd-container .task-bar p {
+    font-size: medium;
+}
+
+#stage-three-cmd-container .prompt-container {
+    padding-left: 1rem;
+}
+
+#stage-three-cmd-container .prompt-container ul {
+    list-style: none;
+}
+
+#stage-three-cmd-container .prompt-container input[type=text] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+#stage-three-cmd-container .prompt-container input[type=text]:focus {
+    outline: none;
+}
+
+#stage-three-cmd-container .prompt-container #enter-outro-button, button {
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: var(--command-prompt-font);
+    font-size: medium;
+    width: 20vw;
+    cursor: pointer;
+}
+
+#stage-three-cmd-container .prompt-container #user-input-area button {
+    width: 10vw;
+}
+
+#stage-three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 8;
+}
+
+#writings-container {
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    width: 35vw;
+    font-size: large;
+    font-family: var(--command-prompt-font);
+    padding: 1vw;
+    text-align: center;
+}
+
+#file-explorer {
+    position: fixed;
+    top: 0vh;
+    left: 30vw;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: var(--command-prompt-font);
+    z-index: 9;
+    display: ntwo;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+#file-explorer .task-bar {
+    border-bottom: 1px solid #fff;
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+}
+
+#file-explorer .task-bar p {
+    font-size: medium;
+}
+
+#file-explorer .prompt-container {
+    padding-left: 1rem;
+}
+
+#file-explorer img, #file-explorer video {
+    width: 100%;
+}
+
+.attention {
+    animation: fadeInOut 1s infinite;
+    opacity: 0;
+}
+
+.slideshow {
+    max-width: 800px;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.fade-in {
+    opacity: 1 !important;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Fade out at the start and end of the animation */
+    }
+    50% {
+        opacity: 1; /* Fade in halfway through the animation */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #stage-three-container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #stage-three-cmd-container {
+        bottom: 0vh;
+        width: 100vw;
+        height: 40vh;
+        overflow-y: scroll;
+        display: none;
+    }
+
+    #stage-three-cmd-container .prompt-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vh;
+    }
+
+    #stage-three-cmd-container .prompt-container #user-input-area button {
+        width: 30vw;
+    }
+
+    #file-explorer {
+        height: 55vh !important;
+        width: 100vw !important;
+        left: 0 !important;
+        display: none !important;
+    }
+
+    #file-explorer img, #file-explorer video {
+        width: 90%;
+    }
+
+    #stage-three-cmd-container .prompt-container #enter-stage-three-button button {
+        width: 65vw;
+    }
+
+    #writings-container {
+        margin: 0;
+        width: 70vw;
+    }
+}

@@ -1,0 +1,19 @@
+#stage-three-transition-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: none;
+    text-align: center;
+}
+
+#stage-three-transition-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 8;
+}
