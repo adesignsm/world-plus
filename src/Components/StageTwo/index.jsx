@@ -15,7 +15,6 @@ import WRITING2 from "../../Assets/Stage2_elements/writing2.svg";
 import WRITING3 from "../../Assets/Stage2_elements/writing3.svg";
 
 import EL_1 from "../../Assets/Stage2_elements/stage2data/video1.mp4";
-import EL_2 from "../../Assets/Stage2_elements/stage2data/video2.mp4";
 import EL_3 from "../../Assets/Stage2_elements/stage2data/video3.mp4";
 import EL_4 from "../../Assets/Stage2_elements/stage2data/image1.jpg";
 import EL_5 from "../../Assets/Stage2_elements/stage2data/image2.jpg";
@@ -33,7 +32,7 @@ import EL_15 from "../../Assets/Stage2_elements/stage2data/image12.jpg";
 import "./index.css";
 
 const elementArray = [
-    EL_1, EL_2, EL_3, EL_4, EL_5, EL_6,
+    EL_1, EL_3, EL_4, EL_5, EL_6,
     EL_7, EL_8, EL_9, EL_10, EL_11, EL_12,
     EL_13, EL_14, EL_15
 ];

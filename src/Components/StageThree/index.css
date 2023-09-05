@@ -179,7 +179,7 @@
         width: 30vw;
     }
 
-    #file-explorer {
+    #stage-three-container #file-explorer {
         height: 55vh !important;
         width: 100vw !important;
         left: 0 !important;
