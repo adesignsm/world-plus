@@ -40,6 +40,10 @@ const Intro = () => {
                     let stageOnePass = true;
                     updateStageOne(stageOnePass);
                     setCmdOpen(false);
+
+                    $(".menu-button").delay(1000).animate({
+                        opacity: "1",
+                    }, 500);
                 }, 2000);
             }
         }, 3500);

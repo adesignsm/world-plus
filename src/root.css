@@ -29,4 +29,11 @@ body, html {
     backdrop-filter: blur(10px);
     border-bottom-left-radius: 15px;
     cursor: pointer;
+    opacity: 0;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }

@@ -3,12 +3,12 @@ import PDF from "../../Assets/Navigation/navigation.png";
 import $ from "jquery";
 
 const Navigation = () => {
-
     const handleCloseNavigation = () => {
         $("#navigation-container").animate({
             scale: "0"
         }, 400);
     }
+
     return (
         <>
             <div id="navigation-container">

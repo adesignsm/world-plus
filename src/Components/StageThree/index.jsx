@@ -164,6 +164,10 @@ const Writings = ({ writings }) => {
                 setTimeout(() => {
                     updateStageThree(false);
                     updateOutro(true)
+
+                    $(".menu-button").delay(500).animate({
+                        opacity: "0",
+                    }, 500);
                 }, 1500);
             }
         }, 4000);

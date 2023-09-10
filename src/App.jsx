@@ -28,8 +28,8 @@ const App = () => {
                 <div className="menu-button" onClick={handleOpenNavigation}>
                     <h3> World Map </h3>
                 </div>
-                <Navigation />
                 <StateProvider>
+                    <Navigation />
                     <Background />
                     <Sphere />
                     <Intro />
