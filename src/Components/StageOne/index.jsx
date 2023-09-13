@@ -241,9 +241,9 @@ const StageOne = () => {
     const adjustedX = isMobile ? 0 : 1;
 
     const prompts = [
-        "Have you created your own experience before?",
-        `Have you experienced self-discovery`,
-        "Another yes or no question"
+        "Do people play a significant role in your way of being?",
+        `Are relationships an important factor in your life?`,
+        "Do outcomes matter to you?"
     ];
 
     const addNewItem = () => {

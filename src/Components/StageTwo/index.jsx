@@ -198,9 +198,9 @@ const StageTwo = () => {
     const controlsToggle = isMobile ? "orbit" : "pointer";
 
     const prompts = [
-        "Have you ever been in a DUO before?",
-        `If you could become part of a DUO, would you?`,
-        "Do you find it fleeting when you are part of a DUO?"
+        "Have you experienced duality?",
+        `Have you decluttered yourself?`,
+        "Do you wish to be shattered(re)built?"
     ];
 
     const addNewItem = () => {
